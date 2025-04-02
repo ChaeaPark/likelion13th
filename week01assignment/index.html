@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>서울의 인기 급상승 숙소</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <h1>서울의 인기 급상승 숙소</h1>
+  <p>에어비앤비에서 많은 관심을 받고 있으며 평점이 높은 숙소입니다.</p>
+
+  <!-- 숙소 카드 전체 컨테이너 -->
+  <div class="container">
+
+    <!-- 숙소 1 -->
+    <div class="card">
+      <img src="house1.png" alt="광진구의 집" />
+      <div class="info">
+        <div class="title-row">
+          <h2>광진구의 집</h2>
+          <span class="rating">★ 4.87 (336)</span>
+        </div>
+        <p class="sub">유목[流木] 나무처럼 쉬고 싶다</p>
+        <p class="sub">지난주 463회 조회됨</p>
+        <p class="sub">4월 13일 ~ 18일</p>
+
+        <!-- 가격 부분 (변경) -->
+        <p class="price">
+          <strong id="gwangjin-price">₩71,438</strong>
+          <span class="night">/박</span>
+          <span class="dot"> · </span>
+          <span class="total">총액 ₩357,188</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- 숙소 2 -->
+    <div class="card">
+      <!-- 게스트 선호 뱃지 -->
+      <div class="badge">게스트 선호</div>
+      <img src="house2.png" alt="서울의 집" />
+      <div class="info">
+        <div class="title-row">
+          <h2>서울의 집</h2>
+          <span class="rating">★ 5.0 (44)</span>
+        </div>
+        <p class="sub">Stay Cocooner / 서촌</p>
+        <p class="sub">지난주 337회 조회됨</p>
+        <p class="sub">5월 6일 ~ 11일</p>
+        <p class="price">
+          <strong>₩147,668</strong>
+          <span class="night">/박</span>
+          <span class="dot"> · </span>
+          <span class="total">총액 ₩738,342</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- 숙소 3 -->
+    <div class="card">
+      <div class="badge">게스트 선호</div>
+      <img src="house3.png" alt="서울의 집" />
+      <div class="info">
+        <div class="title-row">
+          <h2>서울의 집</h2>
+          <span class="rating">★ 4.89 (38)</span>
+        </div>
+        <p class="sub">종로독채한옥 ‘스테이희와’ Premium Hanok...</p>
+        <p class="sub">지난주 666회 조회됨</p>
+        <p class="sub">6월 15일 ~ 20일</p>
+        <p class="price">
+          <strong>₩353,537</strong>
+          <span class="night">/박</span>
+          <span class="dot"> · </span>
+          <span class="total">총액 ₩1,767,683</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- 숙소 4 -->
+    <div class="card">
+      <div class="badge">게스트 선호</div>
+      <img src="house4.png" alt="서울의 아파트" />
+      <div class="info">
+        <div class="title-row">
+          <h2>서울의 아파트</h2>
+          <span class="rating">★ 4.96 (92)</span>
+        </div>
+        <p class="sub">#2[장박환영]청소비x석촌호수 뷰 감성+따듯하고...</p>
+        <p class="sub">지난주 299회 조회됨</p>
+        <p class="sub">4월 20일 ~ 25일</p>
+        <p class="price">
+          <strong>₩138,082</strong>
+          <span class="night">/박</span>
+          <span class="dot"> · </span>
+          <span class="total">총액 ₩690,412</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 버튼 영역 -->
+  <div class="controls">
+    <button class="more">더 찾아보기</button>
+    <button class="adjust" onclick="decreasePrice()">-</button>
+    <button class="adjust" onclick="increasePrice()">+</button>
+  </div>
+
+  <!-- 가격 조정 기능 -->
+  <script>
+    // 현재 1박 가격 상태를 저장
+    let price = 71438;
+
+    // 가격 텍스트 업데이트 함수
+    function updatePrice() {
+      const priceElement = document.getElementById("gwangjin-price");
+      priceElement.textContent = `₩${price.toLocaleString()}`;
+    }
+
+    // - 버튼 클릭 시 가격 10,000원 감소
+    function decreasePrice() {
+      if (price >= 10000) {
+        price -= 10000;
+        updatePrice();
+      }
+    }
+
+    // + 버튼 클릭 시 가격 10,000원 증가
+    function increasePrice() {
+      price += 10000;
+      updatePrice();
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,153 @@
+   body {
+    font-family: sans-serif;
+    padding: 30px;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  /* 숙소 카드 컨테이너 */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  
+  /* 각 숙소 카드 */
+  .card {
+    position: relative;
+    width: 320px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px 15px 6px 15px; /* 상, 우, 하, 좌 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  /* 숙소 이미지 */
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /*  게스트 선호 뱃지 */
+  .badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background-color: white;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    color: #222;
+    z-index: 2;
+  }
+  
+  /* 숙소 제목 + 별점 정렬 */
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* 숙소 제목 */
+  .title-row h2 {
+    font-size: 16px;
+    margin: 0;
+    color: #222;
+  }
+  
+  /* 별점 텍스트 */
+  .rating {
+    font-size: 14px;
+    color: #555;
+    white-space: nowrap;
+  }
+  
+  /* 설명 텍스트 */
+  .sub {
+    font-size: 14px;
+    color: #717171;
+    margin: 1px 0;
+    line-height: 1.35;
+  }
+  
+  /* 가격 표시 */
+  .price {
+    font-size: 14px;
+    color: #222;
+    font-weight: bold;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  
+  /* "/박" */
+  .price .night {
+    font-weight: normal;
+    color: #717171;
+    margin-left: 4px;
+  }
+  
+  /* "·" 구분점 */
+  .price .dot {
+    font-weight: normal;
+    color: #717171;
+  }
+  
+  /* "총액 ₩..." (밑줄 표시) */
+  .price .total {
+    font-weight: normal;
+    color: #717171;
+    text-decoration: underline;
+  }
+  
+  
+  /* 전체 버튼 */
+  .controls {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* "더 찾아보기" 버튼 */
+  button.more {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button.more:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* 가격 조정 버튼 (+ / -) */
+  button.adjust {
+    padding: 10px 14px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  button.adjust:hover {
+    background-color: #f1f1f1;
+  }
+  
