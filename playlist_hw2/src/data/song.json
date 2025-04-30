@@ -1,0 +1,36 @@
+[
+  {
+    "albumImage": "/src/assets/i-do-me.jpeg",
+    "releaseDate": "2024-03-15",
+    "artist": "키키",
+    "title": "I DO ME",
+    "lyricist": "Kiki Lab",
+    "composer": "Uncut Studio"
+  },
+  {
+    "albumImage": "/src/assets/blue.jpeg",
+    "releaseDate": "2025-02-24",
+    "artist": "ZEROBASEONE",
+    "title": "BLUE",
+    "lyricist": "Kenzie",
+    "composer": "Kenzie, Andrew Choi"
+  },
+  {
+    "albumImage": "/src/assets/hands-up.jpeg",
+    "releaseDate": "2025-04-28",
+    "artist": "MEOVV",
+    "title": "HANDS UP",
+    "lyricist": "Teddy Park",
+    "composer": "Teddy Park"
+  },
+  {
+    "albumImage": "/src/assets/hot.jpeg",
+    "releaseDate": "2025-03-14",
+    "artist": "LE SSERAFIM",
+    "title": "HOT",
+    "lyricist": "Supreme Boi, Huh Yunjin",
+    "composer": "Score (13), Megatone (13)"
+  }
+]
+
+
