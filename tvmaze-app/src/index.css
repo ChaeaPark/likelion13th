@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe4e6;
+    color: #333;
+}
+
+header {
+    background-color: #ffccd5;
+    color: #d6336c;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.search-bar {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+    width: 400px;
+    border-radius: 25px;
+    border: 2px solid #d6336c;
+    background-color: #fff0f3;
+    color: #d6336c;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: #d6336c;
+    opacity: 0.7;
+}
+
+.search-bar input:focus {
+    border-color: #e64980;
+    box-shadow: 0 0 8px #e64980;
+}
+
+.search-bar button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #e64980;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #d6336c;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff0f3;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #d6336c;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #d6336c;
+    background-color: #ffccd5;
+}
+
+.card p {
+    margin: 0;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    background-color: #ffe4e6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
