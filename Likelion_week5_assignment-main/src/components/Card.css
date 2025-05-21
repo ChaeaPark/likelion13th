@@ -1,0 +1,42 @@
+.card-clothesImg {
+  width: 294px;
+  height: 192px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.card-clothesType {
+  color: #4F46E5;
+  font-family: Inter;
+  font-size: 10.2px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.card-clothesName {
+  color: #1F2937;
+  font-family: Inter;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.card-clothesPrice {
+  color: #000;
+  font-family: Inter;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.card-clothesImg {
+  width: 294px;
+  height: 192px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
